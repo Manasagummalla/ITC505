@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blogs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background: linear-gradient(to right, #2980b9, #6dd5fa);
+            color: white;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .main-content {
+            display: none;
+            padding: 20px;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: linear-gradient(to right, #2980b9, #6dd5fa); /* Blue gradient */
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#posts">Posts</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="main-content" style="display: block;">
+        <article>
+            <h2>Welcome to My Blog</h2>
+            <p>This is where I share my thoughts, experiences, and adventures.</p>
+            <img src="https://img.freepik.com/free-photo/online-blog_53876-123696.jpg" alt="Placeholder image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices sapien sed massa mattis,
+                ac aliquet nibh ultricies. Nullam ut sem eu ipsum dictum tincidunt. Curabitur in tincidunt nulla.
+                Mauris id arcu eu nulla ultricies malesuada.</p>
+        </article>
+    </section>
+
+    <section id="about" class="main-content">
+        <article>
+            <h2>About Me</h2>
+            <p>I'm a passionate writer and food enthusiast who loves to explore new recipes and share them with
+                others.</p>
+            <img src="https://t3.ftcdn.net/jpg/00/79/32/70/360_F_79327071_ubG3dWNUwUeVFqALg55FLqGpJFgfnoRY.jpg" alt="Placeholder image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices sapien sed massa mattis,
+                ac aliquet nibh ultricies. Nullam ut sem eu ipsum dictum tincidunt. Curabitur in tincidunt nulla.
+                Mauris id arcu eu nulla ultricies malesuada.</p>
+        </article>
+    </section>
+
+    <section id="posts" class="main-content">
+        <article>
+            <h2>Recent Posts</h2>
+            <ul>
+                <li><a href="#">Post 1</a></li>
+                <li><a href="#">Post 2</a></li>
+                <li><a href="#">Post 3</a></li>
+            </ul>
+        </article>
+    </section>
+
+    <section id="contact" class="main-content">
+        <article>
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me with any questions, comments, or collaboration opportunities.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Personal Blog. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('nav a').forEach(function (el) {
+                el.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    var target = document.querySelector(this.getAttribute('href'));
+                    document.querySelectorAll('.main-content').forEach(function (el) {
+                        el.style.display = 'none';
+                    });
+                    target.style.display = 'block';
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
