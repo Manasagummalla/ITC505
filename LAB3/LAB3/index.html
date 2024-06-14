@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivering Fonts to Clients</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            color: #2c3e50;
+            line-height: 1.6;
+            margin: 0;
+            font-size: 18px;
+        }
+        header {
+            background-color: #dbb434;
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #ecf0f1;
+            text-align: center;
+            margin: 0;
+        }
+        h2 {
+            color: #dbb434;
+            text-align: center;
+        }
+        ol {
+            padding-left: 40px;
+        }
+        code {
+            background-color: #ecf0f1;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        pre {
+            background-color: #ecf0f1;
+            border-radius: 4px;
+            overflow: auto;
+        }
+        footer {
+            background-color: #dbb434;
+            color: white;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        a {
+            color: #dbb434;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        #final-msg {
+            margin-bottom: 100px;
+        }
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+        
+        body {
+            font-family: "Tiny5", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delivering Fonts to Clients</h1>
+    </header>
+    <main>
+        <h2>Research Analysis Points about the "Tiny5" Font:</h2>
+        <ul>
+            <li><strong>Font Style:</strong> "Tiny5" appears to be designed for minimalism and simplicity, likely featuring thin strokes and a straightforward design.</li>
+            <li><strong>Legibility:</strong> It is optimized for use in small sizes, but its legibility at different sizes should be assessed.</li>
+            <li><strong>Character Support:</strong> Research the character support of the font, including special characters, diacritics, and symbols.</li>
+            <li><strong>Usage Context:</strong> Investigate the typical contexts where "Tiny5" is used, such as digital interfaces or print media.</li>
+            <li><strong>Designer and Foundry:</strong> Research the designer or foundry behind the font to understand its background and reputation.</li>
+            <li><strong>License and Availability:</strong> Check the licensing terms and availability of the font, including different weights and styles within the family.</li>
+            <li><strong>User Reviews and Feedback:</strong> Look for user reviews and feedback about the font to assess its usability and aesthetic appeal.</li>
+        </ul>
+        <p>This section describes how to deliver a specific font to a client (browser) using the <code>@import</code> rule in CSS.</p>
+        <h2>Steps to Deliver a Font</h2>
+        <ol>
+            <li><strong>Choose a Font:</strong> Select a font from any source. For example, Google Fonts offers a wide range of fonts.</li>
+            <li><strong>Import the Font:</strong> Use the <code>@import</code> rule in your CSS to import the font:
+                <pre>
+                    <code>
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+body {
+    font-family: 'Tiny5', sans-serif; 
+}
+                    </code>
+                </pre>
+            </li>
+        </ol>
+        <p id="final-msg">By following these steps, the selected font will be applied to the client site.</p>
+    </main>
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
