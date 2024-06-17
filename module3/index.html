@@ -3,60 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Gummalla Manasa's Portfolio</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        background-color: #f0f0f0;
-    }
-    
-    header {
-        background-color: #333;
-        color: #fff;
-        padding: 1rem;
-        text-align: center;
-    }
-    
-    nav ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    
-    nav ul li {
-        display: inline;
-        margin-right: 1rem;
-    }
-    
-    main {
-        padding: 2rem;
-    }
-    
-    section {
-        margin-bottom: 2rem;
-        background-color: #fff;
-        padding: 1rem;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    
-    footer {
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 1rem;
-    }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 1rem;
+        }
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 2rem;
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0.5rem 0;
+        }
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .header-title {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
     </style>
-    </head>
+</head>
 <body>
     <header>
-        <h1>Your Name</h1>
+        <div class="header-title">
+            <img src="" alt="./manasa.jpeg"/>
+            <h1>Gummalla Manasa</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -65,22 +101,60 @@
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>Insert your introduction here.</p>
+            <p>As a current master’s student with a strong foundation in Computer Science, I bring 11 months of internship experience with a leading software company. Proficient in Python, I have successfully achieved my project. My academic background, coupled with hands-on experience, positions me as a dedicated developer.</p>
         </section>
         
         <section id="projects">
             <h2>Projects</h2>
             <div class="project">
-                <h3>Project Title</h3>
-                <p>Description of the project.</p>
-                <a href="#">View Project</a>
+                <h3>Food and Hospitality Systems</h3>
+                <p>We have used MSWD and MongoDB for the website. We have used AI for the chatbot in that development.</p>
             </div>
-            <!-- Repeat for other projects -->
+            <div class="project">
+                <h3>Agriculture and Aqua Systems</h3>
+                <p>In Agriculture we had used Django and data science to elaborate the project and used SQL for backend storage.</p>
+            </div>
+            <div class="project">
+                <h3>Online Doctor Appointment</h3>
+                <p>It is about booking an appointment online without physical interaction. We have used JavaScript and Servlets.</p>
+            </div>
+            <div class="project">
+                <h3>Road Accidents Analysis using Machine Learning</h3>
+                <p>Used Machine Learning architectures like Random Forest and Decision Making to predict and analyze road accidents.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>Linux</li>
+                <li>Strong communication and presentation skills</li>
+                <li>Excellent problem-solving skills</li>
+                <li>Teamwork and collaboration skills</li>
+            </ul>
+        </section>
+
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Microsoft Azure Fundamentals</li>
+                <li>AWS Cloud Practitioner Essentials</li>
+                <li>Aviatrix Certified Engineer</li>
+                <li>Oracle Cloud Foundations</li>
+            </ul>
         </section>
     </main>
     
     <footer id="contact">
         <p>Contact Information</p>
+        <p>Email: <a href="mailto:mg3829@nau.edu">mg3829@nau.edu</a></p>
+        <p>Location: Flagstaff, Arizona</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/gummallamanasa-a663a91b4">Gummalla Manasa</a></p>
+        <p>Phone: +1 9286001918</p>
     </footer>
 </body>
 </html>
