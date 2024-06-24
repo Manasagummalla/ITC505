@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #87ceeb;
+            margin: 0;
+        }
+        svg {
+            width: 100%;
+            height: 100%;
+            background-color: #87ceeb;
+        }
+        .circle {
+            fill: #0073e6;
+            animation: moveAndChangeColor 5s infinite alternate;
+        }
+        .rect {
+            fill: #ff5733;
+            animation: rotateAndScale 5s infinite alternate;
+        }
+        .path {
+            stroke: #ffd700;
+            stroke-width: 4;
+            fill: none;
+            animation: dash 5s infinite linear;
+        }
+        @keyframes moveAndChangeColor {
+            0% {
+                transform: translateX(0);
+                fill: #0073e6;
+            }
+            50% {
+                transform: translateX(100px);
+                fill: #ff5733;
+            }
+            100% {
+                transform: translateX(0);
+                fill: #ffd700;
+            }
+        }
+        @keyframes rotateAndScale {
+            0% {
+                transform: rotate(0deg) scale(1);
+            }
+            50% {
+                transform: rotate(180deg) scale(1.5);
+            }
+            100% {
+                transform: rotate(360deg) scale(1);
+            }
+        }
+        @keyframes dash {
+            0% {
+                stroke-dasharray: 0, 200;
+                stroke: #ffd700;
+            }
+            50% {
+                stroke-dasharray: 100, 100;
+                stroke: #0073e6;
+            }
+            100% {
+                stroke-dasharray: 200, 0;
+                stroke: #ff5733;
+            }
+        }
+        text {
+            fill: #fff;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            text-anchor: middle;
+            dominant-baseline: middle;
+        }
+    </style>
+</head>
+<body>
+    <svg viewBox="0 0 400 400">
+        <circle cx="50" cy="100" r="40" class="circle"/>
+        <rect x="200" y="50" width="100" height="100" class="rect"/>
+        <text x="250" y="100" fill="#fff">Manasa</text>
+        <path d="M50,300 Q150,200 250,300 T350,300" class="path"/>
+    </svg>
+</body>
+</html>
