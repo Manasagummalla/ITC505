@@ -1,0 +1,112 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8; /* Light gray background similar to Ulta Beauty */
+    color: #333; /* Dark gray text color */
+}
+
+.container {
+    max-width: 1200px; /* Adjusted for larger content area */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #f57c00; /* Bright orange header color */
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+header h1 {
+    margin: 0;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.nav-links {
+    list-style-type: none;
+    float: right;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease; /* Smooth text color transition */
+}
+
+.nav-links li a:hover {
+    color: #ffd700; /* Ulta Beauty yellow on hover */
+}
+
+.main {
+    padding: 20px 0;
+}
+
+.content-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #f57c00; /* Matching header color */
+}
+
+.content-section p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform and box-shadow transition */
+}
+
+.product:hover {
+    transform: translateY(-5px); /* Move product up slightly on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+}
+
+.product img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+}
