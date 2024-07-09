@@ -1,0 +1,50 @@
+Website URL: Beauty Products
+
+
+
+Reflections Questions: 
+
+1. What challenges did you encounter in implementing structural CSS, grid layout, and flexbox in your webpage?
+   Implementing consistent spacing, alignment, and styling across different sections posed initial challenges. CSS Grid and Flexbox were instrumental in achieving responsive design without compromising layout integrity.
+
+2. What rationale motivated your decisions regarding structure, layout, and design responsiveness?
+   Semantic HTML structure (`<header>`, `<nav>`, `<main>`, `<section>`) was chosen for enhanced accessibility and SEO benefits. Grid layout provided flexibility in content organization, while Flexbox ensured precise alignment within navigation elements for optimal usability.
+
+3. Where have you used absolute and relative positioning in your webpage, respectively? Why was one preferable over the other in those instances?
+   Absolute positioning was used for overlays and pop-ups requiring exact placement relative to parent containers. Relative positioning maintained document flow integrity for elements needing adjustments without disrupting surrounding content.
+
+4. Provide examples of when you implemented media queries and their effects on your website when viewed from different devices.
+   Media queries adjusted font sizes, spacing, and column layouts to ensure readability and usability across devices, from desktops to mobile phones. This responsive approach optimized user experience based on screen size and orientation.
+
+5. Compare your experience of using structural CSS against traditional CSS. Explain why CSS Grid and Flexbox are more effective tools for creating responsive designs.
+   CSS Grid and Flexbox offered streamlined solutions for creating complex layouts and responsive designs compared to traditional CSS. They simplified development, enhanced code readability, and provided robust capabilities for adapting to modern design challenges.
+
+6. How effectively were you able to incorporate images into your layout? What type of images did you choose and why?
+   High-quality images of beauty products were strategically integrated into grid layouts to enhance visual appeal and effectively showcase product features. These images were selected to engage users visually and align with the overall design aesthetic.
+
+7. Describe how you see the role of responsive design in modern web development. How does it relate to the popularity and evolution of structural CSS?
+   Responsive design plays a pivotal role in modern web development by ensuring websites adapt seamlessly to various devices and screen sizes. It supports enhanced user experience, accessibility, and aligns with the evolution of structural CSS, emphasizing flexibility and adaptability in design implementation.
+
+
+References:
+
+CSS Grid Layout - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+
+Flexbox - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout
+
+Flexbox Froggy - https://flexboxfroggy.com/
+
+
+Citation:
+
+
+Coyier, C. (2024, May 20). A complete guide to Flexbox | CSS-Tricks. CSS-Tricks. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+Flexbox - Learn web development | MDN. (2024, July 1). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
+
+Sofela, O. (2022, October 28). CSS Flexbox explained – Complete guide to flexible containers and flex items. freeCodeCamp.org. https://www.freecodecamp.org/news/css-flexbox-complete-guide/
+
+
+
+
+
