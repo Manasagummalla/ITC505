@@ -1,8 +1,8 @@
- document.addEventListener('DOMContentLoaded', function() {
-    var button = document.getElementById('clickButton');
-    var output = document.getElementById('output');
+var x = document.lastModified;
+document.getElementById('lastModified').textContent = x;
 
-    button.addEventListener('click', function() {
-        output.textContent = 'Button clicked!';
-    });
-});
+function flipCoin() {
+    const resultDiv = document.getElementById('result');
+    const outcome = Math.random() < 0.5 ? 'Head' : 'Tail';
+    resultDiv.textContent = 'Result: ' + outcome;
+}

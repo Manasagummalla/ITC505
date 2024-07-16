@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:  url('https://plus.unsplash.com/premium_photo-1684407616442-8d5a1b7c978e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.left-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.right-section {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff; 
+    display: none; 
+    max-height: calc(100vh - 160px); 
+    overflow-y: auto;
+}
+
+.left-section h2,
+.right-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 0.5em;
+}
+
+input, textarea {
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+button {
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.7em;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.product-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.product-item:last-child {
+    border-bottom: none;
+}
+
+.product-item:hover {
+    background-color: #f0f0f0;
+}

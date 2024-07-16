@@ -3,38 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 6 - Holy Grail Layout</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Head or Tail Game</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header>
-        <h1>Welcome to Lab 6</h1>
+        <h1>Welcome to the Head or Tail Game</h1>
     </header>
-    <aside class="sidebar">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </aside>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
     <main>
-        <section class="content">
-            <h2>JavaScript Example</h2>
-            <p>This section will showcase JavaScript functionality.</p>
-            <button id="clickButton">Click Me!</button>
-            <div id="output"></div>
-        </section>
+        <div id="game-container">
+            <button onclick="flipCoin()">Flip Coin</button>
+            <div id="result">Press the button to flip the coin!</div>
+        </div>
     </main>
-    <aside class="advertisement">
-        <a href="https://www.amazon.com" target="_blank">
-            <img src="ad-image.jpg" alt="Advertisement">
+    <div class="advertisement">
+        <div class="ad-banner">Advertisement</div>
+        <a href="https://www.amazon.com/Neutrogena-Resistant-Sunscreen-Spectrum-Fast-Absorbing/dp/B00AEN4QZ8/ref=asc_df_B00AEN4QZ8?tag=bingshoppinga-20&linkCode=df0&hvadid=80058245652853&hvnetw=o&hvqmt=e&hvbmt=be&hvdev=c&hvlocint=&hvlocphy=&hvtargid=pla-4583657821986133&psc=1" target="_blank">
+            <img src="https://m.media-amazon.com/images/I/61LUh3QWctL._SX679_.jpg" alt="Advertisement" class="ad-image">
+        </a>        
+        <a href="https://www.amazon.com/Neutrogena-Resistant-Sunscreen-Spectrum-Fast-Absorbing/dp/B00AEN4QZ8/ref=asc_df_B00AEN4QZ8?tag=bingshoppinga-20&linkCode=df0&hvadid=80058245652853&hvnetw=o&hvqmt=e&hvbmt=be&hvdev=c&hvlocint=&hvlocphy=&hvtargid=pla-4583657821986133&psc=1" target="_blank">
+            <img src="https://m.media-amazon.com/images/I/710Zl97RJcL._SX679_.jpg" alt="Advertisement" class="ad-image">
         </a>
-    </aside>
+    </div>
     <footer>
-        <p>Last updated: <span id="lastModified"></span></p>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+        <p>
+            Addendum: This project implements a simple "Head or Tail" game using JavaScript. The game randomly decides between heads and tails when the user presses the button. The main challenge was ensuring the random function worked correctly and updating the display accordingly.
+        </p>
     </footer>
+    <script>
+
+    </script>
     <script src="script.js"></script>
+
 </body>
 </html>
