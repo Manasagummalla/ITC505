@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mad Lib Form</title>
+    <link rel="stylesheet" href="/ITC505/lab-7/style.css">
+</head>
+<body>
+    <h1>Fill out the Mad Lib</h1>
+    <form action="/ITC505/lab-7/index.html" method="post">
+        <label for="noun">Noun:</label>
+        <input type="text" id="noun" name="noun"><br>
+        <label for="verb">Verb:</label>
+        <input type="text" id="verb" name="verb"><br>
+        <label for="adjective">Adjective:</label>
+        <input type="text" id="adjective" name="adjective"><br>
+        <label for="adverb">Adverb:</label>
+        <input type="text" id="adverb" name="adverb"><br>
+        <label for="pluralNoun">Plural Noun:</label>
+        <input type="text" id="pluralNoun" name="pluralNoun"><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Addendum</h2>
+    <p>This page was created as part of the ITC505 Lab 7 assignment. The goal was to implement a simple ExpressJS server and a Mad Lib form with at least five input fields. The form collects user input and generates a humorous story using the provided words.</p>
+    <p>Here is the step-by-step process:</p>
+    <ol>
+        <li><strong>Setup ExpressJS Server:</strong> The `server.js` file initializes an Express server, sets up middleware for URL-encoded data and logging, and serves static files from the `public` directory. It also includes a route to generate a random number.</li>
+        <li><strong>Install Dependencies:</strong> We installed necessary packages: `express` for the server, `morgan` for improved logging, and `forever` for easier server management.</li>
+        <li><strong>Create Public Directory:</strong> A `public` folder was created to hold the HTML and CSS files for the labs, ensuring they are served correctly by the server.</li>
+        <li><strong>Create Mad Lib Form:</strong> The `index.html` file includes a form with five input fields: noun, verb, adjective, adverb, and plural noun. This form posts data back to the same URL.</li>
+        <li><strong>Handle Form Submission:</strong> In `server.js`, a POST route was added to handle form submissions. It takes the input from the form, constructs a Mad Lib story, and sends it back to the user.</li>
+        <li><strong>Style the Form:</strong> A `style.css` file was created to improve the appearance of the form and make the page more user-friendly.</li>
+    </ol>
+    <p>By following these steps, the server and form were successfully set up, allowing users to create and view their Mad Lib stories dynamically.</p>
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
