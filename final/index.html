@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights Out Game</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Lights Out Game</h1>
+    <div id="game-board"></div>
+    <button id="restart-button">Restart Game</button>
+
+    <div class="addendum">
+        <h2>Addendum</h2>
+        <p>During the development of the Lights Out game, several key decisions and creative choices were made to enhance the overall experience. The process involved multiple stages, from initial setup to final styling, each presenting its own set of challenges.</p>
+        <p>The first step was to set up the game board and implement the core logic for toggling the squares. This involved creating a grid of div elements and ensuring that clicking a square would toggle its state along with its neighbors. This functionality was crucial to the game's mechanics.</p>
+        <p>To ensure the game started with a random but solvable configuration, a randomization function was implemented that simulated clicks on random squares. This approach guaranteed that each game would be unique and challenging, yet always solvable.</p>
+        <p>One of the creative choices was to enhance the visual appeal of the game. A background gradient was applied to the body to create a visually pleasing backdrop. The squares were styled with hover effects and smooth transitions to make the interactions more engaging. Additionally, a restart button was added to allow players to easily reset the game and start over.</p>
+        <p>Styling the game was a significant part of the development process. The board was given a semi-transparent background to make the squares stand out, and the footer was styled to ensure the last modified date was clearly visible. These changes were aimed at improving the overall user experience.</p>
+        <p>Challenges encountered during the development included ensuring the game logic was correctly implemented and the board was properly randomized. Debugging and testing were essential to identify and fix issues. Insights gained during this process highlighted the importance of thorough testing and the value of iterative design in creating a polished final product.</p>
+    </div>
+
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>
